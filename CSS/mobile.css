@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;;
+}
+body {
+    font-size: 1.4rem;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+}
+.main-container {
+    position: relative;
+    height: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+}
+.main-container .img-container img {
+    position: absolute;
+    width: 200px;
+}
+.main-container .img-container .woman {
+    top: -82px;
+    left: calc(50% - 115px);
+}
+.main-container .img-container .shadow {
+    top: -17px;
+    left: calc(50% - 103px);
+}
+.main-container .title-container {
+    display: block;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 2rem;
+}
+.main-container .questions-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.main-container .questions-container .any-question-container {
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+.main-container .questions-container .any-question-container .question a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 5px;
+    cursor: pointer;
+}
+.main-container .questions-container .any-question-container .question a .activo {
+    border: none;
+}
+.main-container .questions-container .any-question-container .question img {
+    width: 12px;
+    height: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+/* .main-container .questions-container .any-question-container .question img .activo {
+    transform: rotate(180deg);
+} */
+.main-container .questions-container .any-question-container .question p {
+    color: hsl(237, 12%, 33%);    
+}
+.main-container .questions-container .any-question-container .question .activo {
+    color: black;
+    font-weight: bold;
+}
+
+.main-container .questions-container .any-question-container .content {
+    color: hsl(240, 6%, 50%);
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main-container .questions-container .any-question-container .activo {
+    height: auto;
+    padding: 5px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}

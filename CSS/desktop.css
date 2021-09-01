@@ -1,0 +1,40 @@
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 80%;
+}
+.main-container .img-container {
+    grid-column: 1;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+.main-container .img-container img {
+    grid-column: 1;
+}
+.main-container .img-container .shadow {
+    width: 100%;
+    left: 0;
+}
+.main-container .img-container .woman {
+    width: 100%;
+    top: 55px;
+    left: 0;
+    overflow: hidden;
+}
+.main-container .title-container {
+    margin-top: 0;
+    text-align:left ;
+    padding-left: 20px;
+}
+.main-container .text-container {
+    align-self: center;
+}
